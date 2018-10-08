@@ -55,6 +55,8 @@
    declarations. */
 #define HAVE_VISIBILITY 1
 
+#define HAVE_V4L_PLUGINS 1
+
 /* Define as const if the declaration of iconv() needs const. */
 /* #undef ICONV_CONST */
 
@@ -117,6 +119,7 @@
 /* Define to `int' if <sys/types.h> does not define. */
 /* #undef mode_t */
 
+#if 0
 /*
  * Import strchrnul(...) from uClibc version 0.9.33.2 since this feature is
  * missing in the Android C library.
@@ -360,4 +363,5 @@ getsubopt (char **optionp, char *const *tokens, char **valuep)
 
   return -1;
 }
+#endif
 #endif
